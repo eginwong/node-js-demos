@@ -1,0 +1,19 @@
+{
+  "name": "node-js-demo-logging",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "morgan": "node morgan-logging.js",
+    "winston": "node winston-logging.js",
+    "pino": "node pino-logging.js"
+  },
+  "dependencies": {
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-pino-logger": "^5.0.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pino": "^6.8.0",
+    "winston": "^3.3.3"
+  }
+}
