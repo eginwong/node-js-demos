@@ -17,7 +17,7 @@ Connection: close
 ```
 
 post
-```sh
+```sh 
 HTTP/1.1 200 OK
 Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
 X-DNS-Prefetch-Control: off
@@ -44,3 +44,11 @@ Connection: close
     - `X-Download-Options: noopen` to protect IE8
     - `X-Content-Type-Options: nosniff` disallows browser from guessing MIME types, stopping MIME attacks
     - `X-XSS-Protection` to filter malicious URL pieces, only protects against Reflected XSS
+
+## Sample Code
+- `vuln/app-ajv.js`: demonstration of ajv schema validation
+- `vuln/app-xss.js`: perils of poor coding leading to xss vuln
+  - `vuln/xss-attack.js`: xss attack
+  - `vuln/app-xss-fixed.js`: fixed xss vuln
+- `vuln/app.js`: demonstration of parameter pollution weakness
+  - `vuln/app-fixed.js`: fixed parameter pollution
